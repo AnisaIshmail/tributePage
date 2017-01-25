@@ -3,14 +3,76 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="%PUBLIC_URL%/img/favicon.ico">
+        <link rel="stylesheet" href="./src/css/main.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <title>The XX Tribute Page </title>
     </head>
-    <body>
+    
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" href="#myPage">The xx Tribute Page</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#music">MUSIC</a></li>
+                <li><a href="#showcase">SHOWCASE</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
         
+        <!-- Container (About Section) -->
+        <div id="about" class="container-fluid bg-grey">
+            <div class="row">
+                <div class="col-sm-4">
+                  <span class="glyphicon glyphicon-remove logo"></span>
+                </div>
+                <div class="col-sm-8">
+                  <h2>The xx</h2>
+                  <h4><strong>MISSION:</strong> Our mission lorem ipsum..</h4>      
+                  <p><strong>VISION:</strong> Our vision Lorem ipsum..</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Container (Music Section) -->
+        <div id="music" class="container-fluid text-center bg-grey">
+          <h2>Music</h2><br>
+          <h4>The Albums so far</h4>
+          <div class="row text-center">
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <img src="./src/img/iSeeYou.jpg" alt="I See You" width="400" height="300">
+                <p><strong>I See You</strong></p>
+                <p>2017</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <img src="./src/img/Coexist.jpg" alt="Coexist" width="400" height="300">
+                <p><strong>Coexist</strong></p>
+                <p>2012</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <img src="./src/img/xxAlbum.jpg" alt="xx" width="400" height="300">
+                <p><strong>xx</strong></p>
+                <p>2009</p>
+              </div>
+            </div>
+          </div>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
